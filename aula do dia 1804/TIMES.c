@@ -13,7 +13,7 @@ main(){
 	printf("escreva o valor de gols do time da casa e do time de fora,respectivamente\n");
 	scanf("%d",&tc);
 	scanf("%d",&tf);
-	if (tf-tc>2){
+	if (tf-tc>=2){
 		printf("o time de fora se classificou\n");
 		
 	}
