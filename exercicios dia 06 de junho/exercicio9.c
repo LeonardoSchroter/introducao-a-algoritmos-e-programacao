@@ -11,4 +11,5 @@ main(){
 			scanf(" %d",&vetor[i][j]);
 		}
 	}
+	
 }
