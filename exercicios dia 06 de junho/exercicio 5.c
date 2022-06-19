@@ -7,5 +7,23 @@ com o da vigésima e escreva o vetor após estas modificações.*/
 #include<conio.h>
 #include<math.h>
 main(){
+	int a,vetor[20],i,subst,c=10;
+	//ler vetores
+	for(i=0;i<20;i++){
+		scanf("%d",&vetor[i]);
+			
+	}
+	//trocar vetores
+		for(i=0;i<10;i++){
+			subst=vetor[i];
+			vetor[i]=vetor[c];	
+			vetor[c]=subst;
+			c++;		
+		}
+		for(i=0;i<20;i++){
+		printf("[%d]=%d\n",i,vetor[i]);
+		}
+	
+	
 	
 }
