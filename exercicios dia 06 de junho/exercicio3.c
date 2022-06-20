@@ -4,25 +4,26 @@ utilizando um vetor auxiliar.*/
 #include<conio.h>
 #include<math.h>
 main(){
-	int vetora[10],vetorb[10],j, i,aux;
+	int vetora[10],ord[10],o, i,menor,m;
 	
 	for(i=0;i<10;i++){
 		scanf("%d",&vetora[i]);
 		
 	}
+	m=0;
 	
-		for(i=0;i<10;i++){
-			for(j=0,j<10,j++){
-				if(vetora[i]>vetora[j]){
-					auxiliar=vetora[i];
-					vetora[i]=vetora[j];
-					vetora[j]=auxiliar;
+		for(o=0;o<10;o++){
+			for(i=0;i<10;i++){
+				if(vetora[i]<vetora[m]){
+				m=i;
 				}
 			}
+			ord[o]=vetora[m];
+			vetora[m]= 10000;
 		}
+		
 		for(i=0;i<10;i++){
-			vetorb[i]=vetora[i];
-			printf("%d",vetorb[i]);
+			printf("%d \n",ord[i]);
 		}
 		
 }
