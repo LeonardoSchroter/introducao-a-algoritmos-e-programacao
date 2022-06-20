@@ -24,11 +24,11 @@ main(){
 			}
 		}
 	for(i=0;i<5;i++){
-		for(j=0;j<5;j++){
-			if(dp[i]==ds[j]){
-				co++;
-			}
+	
+		if(dp[i]==ds[i]){
+			co++;
 		}
+		
 	}
 			if(co==5){
 			
